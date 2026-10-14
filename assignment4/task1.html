@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 - Form with HTML5 Validation</title>
+</head>
+<body>
+  <h1>Contact Form (HTML5 Validation)</h1>
+
+  <form action="#" method="post">
+    <p>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+    </p>
+
+    <p>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required maxlength="100">
+    </p>
+
+    <p>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" cols="40" required minlength="10" maxlength="300"></textarea>
+    </p>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
